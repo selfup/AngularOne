@@ -1,4 +1,5 @@
 # AngularOne
+
 First time with AngularJS
-Testing
-test
+
+Using what I can learn from small tutorials to get started with AngularJS
