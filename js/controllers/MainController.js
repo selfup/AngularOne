@@ -1,4 +1,4 @@
-app.controller("MainController", ['$scope', '$http', ($scope, $http, $httpProvider) => {
+app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
   $scope.title = 'AngularJS'
   $scope.promo = '50% off!'
   $scope.product = { name: 'Getting Started With AngularJS', price: 9,  pubdate: new Date('2012', '02', '12') }
