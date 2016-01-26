@@ -21,7 +21,7 @@
           <div class="thumbnail">
             <p class="title">{{ product.name }}</p>
             <p class="price">{{ product.price | currency }}</p>
-            <p class="date"> </p>
+            <p class="date">{{ product.pubdate | date }}</p>
           </div>
         </div>
 
