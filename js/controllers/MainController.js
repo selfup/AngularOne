@@ -6,7 +6,7 @@ app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
                         method: 'GET',
                         url: 'http://idea.selfup.me/api/v1/ideas'
                       }).then(function successCallback(response) {
-                        $scope.repoName = response.data[0].quality
+                        $scope.repoName = response.data[0]
                       }, function errorCallback(response) {
                         console.log("OH NO")
                       })
