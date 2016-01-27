@@ -16,17 +16,17 @@
       <div class="container" id="colors" style="background-color: {{ color.orange }};">
         <br><br>
         <button id="change-color" class="btn btn-primary">Change the background color</button>
-        <h1>{{ title }}</h1>
-        <h2>{{ promo }}</h2>
+        <h1>Category: {{ title }}</h1>
+        <h2>Promo: {{ promo }}</h2>
 
         <div class="col-md-6">
           <div class="thumbnail">
-            <p class="title">{{ product.name }}</p>
-            <p class="price">{{ product.price | currency }}</p>
-            <p class="date">{{ product.pubdate | date }}</p>
-            <p class="fun-repo">{{ repoName.title }}</p>
-            <p>{{ repoName.body }}</p>
-            <p>{{ repoName.quality }}</p>
+            <p class="title"><strong>Title:</strong> {{ product.name }}</p>
+            <p class="price"><strong>Price:</strong> {{ product.price | currency }}</p>
+            <p class="date"><strong>Date:</strong> Published: {{ product.pubdate | date }}</p>
+            <p class="fun-repo"><strong>API data:</strong> {{ repoName.title }}</p>
+            <p><strong>API data:</strong> {{ repoName.body }}</p>
+            <p><strong>API data:</strong> {{ repoName.quality }}</p>
           </div>
         </div>
 
