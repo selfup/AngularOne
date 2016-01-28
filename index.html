@@ -16,6 +16,7 @@
       <div class="container" id="colors" style="background-color: {{ color.orange }};">
         <br><br>
         <button id="change-color" class="btn btn-primary">Change the background color</button>
+        <a href="todo.html"><button  id="todo" class="btn btn-danger">Go to my Todo App!</button></a>
         <h1>Category: {{ title }}</h1>
         <h2>Promo: {{ promo }}</h2>
 
@@ -24,9 +25,9 @@
             <p class="title"><strong>Title:</strong> {{ product.name }}</p>
             <p class="price"><strong>Price:</strong> {{ product.price | currency }}</p>
             <p class="date"><strong>Date:</strong> Published: {{ product.pubdate | date }}</p>
-            <p class="fun-repo"><strong>API data:</strong> {{ repoName.title }}</p>
-            <p><strong>API data:</strong> {{ repoName.body }}</p>
-            <p><strong>API data:</strong> {{ repoName.quality }}</p>
+            <p class="fun-repo"><strong>API Title:</strong> {{ repoName.title }}</p>
+            <p><strong>API Body:</strong> {{ repoName.body }}</p>
+            <p><strong>API Quality:</strong> {{ repoName.quality }}</p>
           </div>
         </div>
 
