@@ -7,7 +7,7 @@ app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
                      price: 9,
                      pubdate: new Date('2012', '02', '12')
                    }
-                   
+
   $scope.repo = $http({
                         method: 'GET',
                         url: 'http://idea.selfup.me/api/v1/ideas'
