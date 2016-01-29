@@ -8,6 +8,8 @@
 
 .thumbnail {
   border-radius: 0px;
+  background-color: #A1D490;
+  border-width: medium;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
