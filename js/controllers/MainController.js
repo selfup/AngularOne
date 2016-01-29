@@ -2,7 +2,12 @@ app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
   $scope.color = { teal: "teal", orange: "orange"}
   $scope.title = 'AngularJS'
   $scope.promo = '50% off!'
-  $scope.product = { name: 'Getting Started With AngularJS', price: 9,  pubdate: new Date('2012', '02', '12') }
+  $scope.product = {
+                     name: 'Getting Started With AngularJS',
+                     price: 9,
+                     pubdate: new Date('2012', '02', '12')
+                   }
+                   
   $scope.repo = $http({
                         method: 'GET',
                         url: 'http://idea.selfup.me/api/v1/ideas'
