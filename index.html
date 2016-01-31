@@ -13,9 +13,9 @@
     </div>
 
     <div class="main" ng-controller="MainController">
-      <div class="container" id="colors" style="background-color: {{ color.orange }};">
+      <div class="container" id="colors" style="background-color: {{ color.change }};">
         <br><br>
-        <button id="change-color" class="btn btn-primary">Change the background color</button>
+        <button id="change-color" class="btn btn-primary" ng-click="changeColor($index)">Change the background color</button>
         <a href="todo.html"><button  id="todo" class="btn btn-danger">Go to my Todo App!</button></a>
         <h1>Category: {{ title }}</h1>
         <h2>Promo: {{ promo }}</h2>

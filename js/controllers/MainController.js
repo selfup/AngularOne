@@ -1,5 +1,5 @@
 app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
-  $scope.color = { teal: "teal", orange: "orange"}
+  $scope.color = { change: "orange"}
   $scope.title = 'AngularJS'
   $scope.promo = '50% off!'
   $scope.product = {
@@ -17,4 +17,13 @@ app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
                         console.log("OH NO")
                       })
   $scope.repoName = $scope.repo
+  $scope.colorCounter = 1
+  $scope.changeColor = function(index) {
+    this.colorCounter += 1
+    if (this.colorCounter % 2 === 0) {
+      $scope.color.change = "orange"
+    } else {
+      $scope.color.change = "teal"
+    }
+  }
 }])
