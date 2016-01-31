@@ -21,9 +21,9 @@ app.controller("MainController", ['$scope', '$http', ($scope, $http) => {
   $scope.changeColor = function(index) {
     this.colorCounter += 1
     if (this.colorCounter % 2 === 0) {
-      $scope.color.change = "orange"
-    } else {
       $scope.color.change = "teal"
+    } else {
+      $scope.color.change = "orange"
     }
   }
 }])
