@@ -1,6 +1,7 @@
 class App {
   constructor() {
     this.app = angular.module("myApp", [])
+    this.controller
   }
   
   get controller() {
@@ -42,4 +43,3 @@ class App {
 }
 
 const app = new App
-app.controller
