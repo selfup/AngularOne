@@ -10,13 +10,13 @@ app.controller("MainController", ['$scope', '$http', (s, h) => {
   }
                 
   s.repo = h({ 
-               method: 'GET',
-               url: 'http://idea.selfup.me/api/v1/ideas'
-             }).then(function successCallback(response) {
-               s.repoName = response.data[0]
-             }, function errorCallback(response) {
-               console.log(response)
-             })
+    method: 'GET',
+    url: 'http://idea.selfup.me/api/v1/ideas'
+  }).then(function successCallback(response) {
+    s.repoName = response.data[0]
+  }, function errorCallback(response) {
+    console.log(response)
+  })
              
   s.repoName     = s.repo
   s.colorCounter = 1
