@@ -2,9 +2,12 @@ app.controller("MainController", ['$scope', '$http', (s, h) => {
   s.color   = { change: "orange"}
   s.title   = 'AngularJS'
   s.promo   = '50% off!'
-  s.product = { name: 'Getting Started With AngularJS',
-                price: 9,
-                pubdate: new Date('2012', '02', '12') }
+  
+  s.product = { 
+    name: 'Getting Started With AngularJS',
+    price: 9,
+    pubdate: new Date('2012', '02', '12') 
+  }
                 
   s.repo = h({ 
                method: 'GET',
