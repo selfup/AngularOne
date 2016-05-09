@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   </head>
   <body ng-app="myApp" ng-cloak>
     <div class="header">
@@ -16,7 +16,6 @@
       <div class="container" id="colors" style="background-color: {{ color.change }};">
         <br><br>
         <button id="change-color" class="btn btn-primary" ng-click="changeColor($index)">Change the background color</button>
-        <a href="todo.html"><button  id="todo" class="btn btn-danger">Go to my Todo App!</button></a>
         <h1>Category: {{ title }}</h1>
         <h2>Promo: {{ promo }}</h2>
 
